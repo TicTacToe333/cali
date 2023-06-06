@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4D4B30;
+    --secondary-color: #817656;
+    --accent1-color: #DECBB7;
+    --accent2-color: #FFFFFF;
+    --accent3-color: #000000;
+    
+    --heading-font: 'Open Sans', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    
+    --nav-background-color: #4D4B30;
+    --nav-link-color: #DECBB7;
+    --nav-hover-link-color: #817656;
+    --nav-hover-background-color: #FFF0F5;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    }
+    
+body {
+    font-family: var(--paragraph-font);
+    font-size:20px;
+    max-width: 90%;
+    padding: 20px;
+    color: var(--accent2-color);
+    margin:0 auto;
+    background-color: var(--accent2-color);
+    }
+
+header {
+    font-size:30px;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    display:grid;
+    align-items: center;
+    grid-template-columns: repeat(5,auto);
+    }               
+a {
+    display: block;
+    color: var(--nav-background-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+/*Might need to fix this later. Find a better way for h2 to span the whole row*/
+h2{
+    grid-column: span 5;
+    text-align:center;
+    color: var(--accent3-color);
+}
+section {
+    background-color: var(--secondary-color);
+    padding:40px;
+    display:grid;
+    align-items: center;
+    gap:20px;
+    
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    align-items:center;
+    background-color: var(--nav-background-color);
+}
+
+/*CSS for the hero class*/
+.hero{
+    position:relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+.hero h1{
+    position:absolute;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+    top: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.hero article{  
+    position: absolute;
+    max-width: 90%;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    top: 250px;
+    margin: 0 auto;
+}
+.hero article img{
+    float:right;
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.sociallinks {
+    width:auto;
+    height:auto;;
+    text-decoration: none;
+    display:flex;
+    gap: 10px;
+    justify-content:flex-end;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+form {
+    width:auto;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: var(--accent1-color);
+    color:var(--primary-color);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.form-item {
+    display: grid;
+    align-items:start;
+    grid-template-columns: auto auto auto;
+    padding:0.5rem;
+}
+
+table, td, th {
+    border: 1px solid;
+  }
+  
+table {
+    height:auto;
+    text-align:center;
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--accent3-color);
+    background-color: var(--accent1-color);
+}
+
+.redirect{
+    background-color: var(--accent2-color);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    border-left:5px solid var(--accent3-color);
+    border-right:5px solid var(--accent3-color);
+    border-top:3px solid var(--accent3-color);
+    border-bottom:3px solid var(--accent3-color);
+    grid-column:span 3;
+    
+}
+
+.double-column{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.blog{
+    color: var(--accent3-color);
+    background-color: var(--accent1-color);
+    padding:20px;
+}
+
+.trips{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
+}
+
+.book-now{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
