@@ -210,3 +210,13 @@ table {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.login{
+    display:grid;
+    border:solid var(--primary-color); 
+}
+
+.login a{
+    border:solid var(--primary-color); 
+    align-items: end;
+}
