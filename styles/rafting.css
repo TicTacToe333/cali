@@ -124,6 +124,10 @@ footer {
     gap: 10px;
     justify-content:flex-end;
 }
+/* This is not changing the text color in the top words for some reason */
+.sociallinks:hover{
+    color: var(--primary-color);
+}  
 
 button {
     margin: 1rem;
@@ -133,6 +137,10 @@ button {
     border-radius: .5rem;
     padding: .75rem;
     font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: var(--secondary-color);  
 }
 
 form {
@@ -219,4 +227,12 @@ table {
 .login a{
     border:solid var(--primary-color); 
     align-items: end;
+}
+
+.error{ 
+    text-align:center;
+}
+
+.error img{
+    margin:auto;
 }
