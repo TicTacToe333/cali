@@ -241,3 +241,8 @@ span.redacted {
     color: black;
     background-color: black;
 }
+
+.title{
+    max-height: 40vw;
+    max-width: 100%;
+}
