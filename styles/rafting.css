@@ -106,8 +106,8 @@ footer {
     left: 0;
     right: 0;
     background-color: var(--primary-color);
-    top: 250px;
-    margin: 0 auto;
+    top: 40%;
+    margin: 0 7%;
 }
 .hero article img{
     float:right;
