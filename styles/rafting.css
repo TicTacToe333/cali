@@ -211,7 +211,7 @@ table {
 
 .trips{
     grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 10%;
 }
 
 .book-now{
@@ -246,4 +246,12 @@ span.redacted {
 .title{
     max-height: 40vw;
     max-width: 100%;
+}
+
+.stuff{
+    color:var(--secondary-color)
+}
+
+#p2{
+    display:inline;
 }

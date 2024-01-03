@@ -1,6 +1,7 @@
-let master_username = "test";
-let master_password = "test";
+let master_username = "AndrewTurner";
+let master_password = "carcosa1642";
 let next_page = "./solution.html";
+let wrong_answer = "./tryagain.html";
 
 function checkPassword() {
     let username = document.querySelector('#username').value;
@@ -11,6 +12,8 @@ function checkPassword() {
     // Step 4: Assign the return value to an HTML form element with an ID of sum
     if (username == master_username && password == master_password){
         window.location.href=next_page;
+    }else{
+        window.location.href=wrong_answer;
     }
 }
 
